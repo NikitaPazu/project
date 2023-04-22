@@ -1,16 +1,17 @@
 from django.db import models
 
 
-
-class Role:
+class Role(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=25,
                             null=False,
                             unique=False)
-    Possibilites = models.CharField()
+    Possibilites = models.CharField(max_length= 40,
+                                    null=False,
+                                    unique=False)
 
 
-class Users:
+class Users(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=25,
                             null=False,
@@ -18,21 +19,22 @@ class Users:
     surname = models.CharField(max_length=30,
                                null=True,
                                unique=False)
-    age = models.CharField(null=False,
-                           Unique=False)
-    Role = models.ForeignKey(Role, on_delete=models.SET_NULL)
+    age = models.PositiveIntegerField()
+    role = models.ForeignKey(Role, on_delete=models.SET_NULL, null=True)
 
-class Posts:
+
+class Posts(models.Model):
     id = models.AutoField(primary_key=True)
-    Text = models.CharField(max_length=5000)
-    Likes = models.IntegerField()
-    Date = models.DateField(auto_now=True)
-    Comms = models.CharField(max_length=500)
-    User = models.ForeignKey(Users, on_delete=models.SET_NULL)
-    Views = models.IntegerField()
-class Comms:
+    text = models.CharField(max_length=5000)
+    likes = models.IntegerField()
+    date = models.DateField(auto_now=True)
+    comments = models.CharField(max_length=500)
+    user = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True)
+
+
+class Comms(models.Model):
     id = models.AutoField(primary_key=True)
-    Text = models.CharField(max_length=500)
-    Date = models.DateField(auto_now=True)
-    User = models.ForeignKey(Users, on_delete=models.SET_NULL)
-    Post = models.ForeignKey(Posts, on_delete=models.SET_NULL)
+    text = models.CharField(max_length=750)
+    date = models.DateField(auto_now=True)
+    user = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True)
+    post = models.ForeignKey(Posts, on_delete=models.SET_NULL, null=True)

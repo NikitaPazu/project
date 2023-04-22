@@ -1,1 +1,3 @@
 python python_articles/manage.py runserver
+python .\python_articles\manage.py makemigrations python_articles
+python .\<python_articles>\manage.py migrate
