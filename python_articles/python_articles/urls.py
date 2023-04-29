@@ -22,7 +22,7 @@ urlpatterns = [
 from . import views
 path('', views.homePage),
 path('about/', views.index),
-path('new/<name>', views),
+path('home>', views.index),
 path('', views),
 
 
