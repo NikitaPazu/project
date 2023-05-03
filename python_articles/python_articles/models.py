@@ -25,10 +25,10 @@ class Users(models.Model):
 
 class Posts(models.Model):
     id = models.AutoField(primary_key=True)
-    text = models.CharField(max_length=5000)
+    text = models.CharField(max_length=2500)
     likes = models.IntegerField()
     date = models.DateField(auto_now=True)
-    comments = models.CharField(max_length=500)
+    comments = models.CharField(max_length=750)
     user = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True)
 
 

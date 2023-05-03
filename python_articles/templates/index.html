@@ -8,31 +8,31 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Панель навигации:</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="http://localhost:63342/python_articles/python_articles/templates/">Домой</a>
         </li>
-        <button type="button" class="btn btn-outline-light"><a href="http://localhost:63342/python_articles/python_articles/templates/index.html?#">Articles<a> </button>
-<!--        <button type="button" class="btn btn-outline-light"><a href="m.vk.com/nik_pazushkin">Me<a> </button>-->
-<!--      </ul>-->
+        <a class="nav-link active" aria-current="page" href="users_articles">Статьи пользователей</a>
+        <a class="nav-link active" aria-current="page" href="add_post">Создать пост</a>
       <form class="d-flex">
-        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control mr-2" type="search" placeholder="Искать" aria-label="Искать">
+        <button class="btn btn-outline-success" type="submit">Найти</button>
       </form>
     </div>
   </div>
 </nav>
       <div class="card" style="width: 18rem;">
-  <img src="https://timeweb.com/ru/community/article/3c/3c0cefa6f99fda8d9596da474fc7e264.jpg" class="card-img-top" height=150 width=1200>
+<!--  <img src="https://timeweb.com/ru/community/article/3c/3c0cefa6f99fda8d9596da474fc7e264.jpg" class="card-img-top" height=150 width=1200>-->
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
+
 
 
   <div class="card-body">
@@ -57,7 +57,7 @@
         <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title, class= font-weight-bolder" >Python повлиял на JavaScript</h5>
-    <p class="card-text">Python является одним из 9 языков, которые повлияли на дизайн JavaScript. Другие языки: AWK,  C,  HyperTalk,  Java,  Lua,  Perl,  Scheme и Self.</p>
+    <p class="card-text">Python является одним из 9 языков, которые повлияли на дизайн JavaScript.</p>
     <button type="button" class="btn btn-outline-light"><a href="https://techrocks.ru/2020/06/27/15-facts-about-python-programming/">Ссылка на сайт фактами<a> </button>
   </div>
 </div>
@@ -75,6 +75,10 @@
     <button type="button" class="btn btn-outline-light"><a href="https://techrocks.ru/2020/06/27/15-facts-about-python-programming/">Ссылка на сайт фактами<a> </button>
   </div>
 </div>
+
+
+      {% block content %}
+        {% endblock content %}
 
 
 </div>

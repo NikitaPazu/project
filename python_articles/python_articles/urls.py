@@ -23,6 +23,8 @@ from . import views
 path('', views.homePage),
 path('about/', views.index),
 path('home>', views.index),
+path('users_articles>', views.index),
+path('add_post>', views.index),
 path('', views),
 
 
