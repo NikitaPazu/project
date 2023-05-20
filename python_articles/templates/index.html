@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--from .views.py import Post_like-->
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
@@ -15,10 +16,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="http://localhost:63342/python_articles/python_articles/templates/">Домой</a>
+          <a class="nav-link active" aria-current="page" href="http://localhost:8000/">Домой</a>
         </li>
-        <a class="nav-link active" aria-current="page" href="users_articles">Статьи пользователей</a>
-        <a class="nav-link active" aria-current="page" href="add_post">Создать пост</a>
     </div>
   </div>
 </nav>
@@ -31,62 +30,66 @@
 
 
 
-  <div class="card-body">
+  <div class="card border-light mb-3" style="width: 18rem;">
     <h5 class="card-title">Где работает Python?</h5>
     <h6 class="card-subtitle mb-2 text-muted">землянин, я марсианин, отвеeть</h6>
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
     <p class="card-text">Python работает не только на Земле, но и на Марсе: он используется в марсоходе, созданном NASA. </p>
     <button type="button" class="btn btn-light">👍🏻</button>
-    <p class="font-weight-bold">кол-во</p>
+<!--    <p class="font-weight-bold">кол-во</p>-->
   </div>
 
-    <div class="card" style="width: 18rem;">
+   <div class="card border-light mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">С чем работает Python?</h5>
     <h6 class="card-subtitle mb-2 text-muted">с чем же?</h6>
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
     <p class="card-text"> С Python работают крупнейшие мировые компании: Google, Netflix, Spotify, Amazon, Pinterest, YouTube и многие другие. </p>
     <button type="button" class="btn btn-light">👍🏻</button>
-    <p class="font-weight-bold">кол-во</p>
+<!--    <p class="font-weight-bold">кол-во</p>-->
   </div>
-      <div class="card" style="width: 18rem;">
+    <div class="card border-light mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title, class= font-weight-bolder" >Почему язык называется Python'ом?</h5>
     <h6 class="card-subtitle mb-2 text-muted">может змеи? с-с-с </h6>
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
     <p class="card-text">Название языка не имеет ничего общего со змеями, он назван так в честь популярной британской комедийной группы Монти Пайтона из 1970ых.</p>
     <button type="button" class="btn btn-light">👍🏻</button>
-    <p class="font-weight-bold">кол-во</p>
+<!--    <p class="font-weight-bold">кол-во</p>-->
 </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card border-light mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title, class= font-weight-bolder" >Python повлиял на JavaScript!</h5>
     <h6 class="card-subtitle mb-2 text-muted">что???</h6>
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
     <p class="card-text">Python является одним из 9 языков, которые повлияли на дизайн JavaScript'а.</p>
     <button type="button" class="btn btn-light btn-light ">👍🏻</button>
-    <p class="font-weight-bold">кол-во</p>
+<!--    <p class="font-weight-bold">кол-во</p>-->
   </div>
 </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card border-light mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title, class= font-weight-bolder" >Python старше, чем думалось!</h5>
     <h6 class="card-subtitle mb-2 text-muted">старичок..</h6>
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
     <p class="card-text"> Python старше Java. Первая версия Python появилась в 1991 году, а версия всеми любимой Java лишь в 1996 году.</p>
     <button type="button" class="btn btn-light">👍🏻</button>
-    <p class="font-weight-bold">кол-во</p>
+<!--    <p class="font-weight-bold">кол-во</p>-->
   </div>
 </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card border-light mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title, class= font-weight-bolder" >Python — язык с открытым исходным кодом!</h5>
     <h6 class="card-subtitle mb-2 text-muted">да-да..</h6>
-    <p class="card-text"> Скачивание и использование языка бесплатно. Каждый член сообщества Python может внести лепту в развитие языка (cтоит учесть, что большинство предложений программистов не принимается :) )</p>
-    <a href="like/" type="button" class="btn btn-light">👍🏻</a>
-<!--    <p class="font-weight-bold">кол-во</p>-->
+    <h7 class="card-subtitle mb-2 text-muted">Дата</h7>
+    <p class="card-text"> Скачивание и использование языка бесплатно. Каждый член сообщества Python может внести лепту в развитие языка (cтоит учесть, что большинство предложений программистов не принимается ) )</p>
+    <a href="like{{ id }}" type="button" class="btn btn-light ">👍🏻</a>
   </div>
 </div>
 
 
       {% block content %}
         {% endblock content %}
-
 
 </div>
 </body>
